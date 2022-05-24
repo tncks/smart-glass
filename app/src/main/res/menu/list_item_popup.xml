@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mItem01"
+        android:title="@string/m_edit_profile" />
+    <item
+        android:id="@+id/mItem02"
+        android:title="@string/m_pin_profile" />
+    <item
+        android:id="@+id/mItem03"
+        android:title="@string/m_move_profile_history_tab" />
+
+</menu>

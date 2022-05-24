@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:endColor="@color/smart_splash_01"
+                android:startColor="@color/smart_splash_02"
+                android:type="linear" />
+        </shape>
+
+
+    </item>
+
+    <item
+        android:width="10dp"
+        android:left="21dp">
+        <shape android:shape="rectangle">
+            <size android:width="1dp" />
+            <size android:height="1dp" />
+            <solid android:color="@color/smart_splash_03" />
+
+
+        </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/img_logo">
+
+        </bitmap>
+    </item>
+
+
+</layer-list>

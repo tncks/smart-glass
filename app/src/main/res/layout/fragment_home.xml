@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 여행기록 프래그먼트 -->
+
+    <data>
+
+        <variable
+            name="title"
+            type="com.smart.app.model.Title" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
+    <!-- Reference -->
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+
+    <!-- 테스트 코드, 추후 포토북 아이템으로 활용 가능성 -->
+
+    <!--<data>-->
+
+    <!--    <variable-->
+    <!--        name="product"-->
+    <!--        type="com.smart.app.model.Product" />-->
+    <!--</data>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="250dp"-->
+    <!--    android:layout_marginStart="16dp"-->
+    <!--    android:layout_marginTop="8dp"-->
+    <!--    android:layout_marginEnd="16dp"-->
+    <!--    android:layout_marginBottom="8dp"-->
+    <!--    app:cardCornerRadius="12dp">-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_promotion_image"-->
+    <!--            imageUrl="@{product.representativeImageUrl}"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="180dp"-->
+    <!--            android:contentDescription="@string/description_product_representative_image"-->
+    <!--            android:scaleType="centerCrop"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_promotion_discount_rate"-->
+    <!--            style="@style/TextSubtitle2.Purple.Bold"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:text="@{@string/unit_discount_rate(product.discountRate)}"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/iv_promotion_image"-->
+    <!--            tools:text="10%" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_promotion_price"-->
+    <!--            style="@style/TextSubtitle1.Bold"-->
+    <!--            discountRate="@{product.discountRate}"-->
+    <!--            priceAmount="@{product.price}"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="6dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@id/tv_promotion_discount_rate"-->
+    <!--            app:layout_constraintStart_toEndOf="@id/tv_promotion_discount_rate"-->
+    <!--            tools:text="9,980원" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_promotion_original_price"-->
+    <!--            style="@style/TextCaption1.Grey05"-->
+    <!--            priceAmount="@{product.price}"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@id/tv_promotion_price"-->
+    <!--            app:layout_constraintStart_toEndOf="@id/tv_promotion_price"-->
+    <!--            tools:text="12,000원" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_promotion_label"-->
+    <!--            style="@style/TextSubtitle2"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:layout_marginTop="2dp"-->
+    <!--            android:layout_marginEnd="16dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:maxLines="1"-->
+    <!--            android:text="@{product.label}"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/tv_promotion_original_price"-->
+    <!--            tools:text="커스텀 포토북" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--</androidx.cardview.widget.CardView>-->
+    <!--</layout>-->

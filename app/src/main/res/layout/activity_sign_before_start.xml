@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 로그인 -->
+
+    <TextView
+        android:id="@+id/tv_search_forgot_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/t_font_light"
+        android:text="@string/tv_forgot_pw_start_reset"
+        android:textColor="@color/smart_grey_05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="비밀번호 찾기" />
+
+    <EditText
+        android:id="@+id/et_u_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints="email"
+        android:background="@null"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:minHeight="48dp"
+        android:textColor="@color/smart_grey_04"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_search_forgot_pw"
+        tools:ignore="LabelFor"
+        tools:text="이메일" />
+
+    <EditText
+        android:id="@+id/et_u_pw"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints="password"
+        android:background="@null"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword|textNoSuggestions"
+        android:minHeight="48dp"
+        android:textColor="@color/smart_grey_04"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="@id/et_u_email"
+        app:layout_constraintTop_toBottomOf="@id/et_u_email"
+        tools:inputType="text"
+        tools:ignore="LabelFor"
+        tools:text="비밀번호" />
+
+    <ImageView
+        android:id="@+id/iv_hide_eye_pw"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/label_category"
+        android:src="@drawable/ic_closed_eye"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_search_forgot_pw"
+        tools:srcCompat="@drawable/ic_closed_eye" />
+
+    <View
+        android:id="@+id/pos_guide_lines"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/et_u_pw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/smart_white" />
+
+    <TextView
+        android:id="@+id/tv_values_do_not_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/t_font_light"
+        android:text="@string/email_or_pw_not_match"
+        android:textColor="@color/smart_sky"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:paddingBottom="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pos_guide_lines"
+        tools:text="이메일 또는 비밀번호가 일치하지 않습니다." />
+
+    <Button
+        android:id="@+id/bt_forward_login"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/smart_sky"
+        android:fontFamily="@font/t_font_medium"
+        android:enabled="true"
+        android:text="@string/bt_login_text_value"
+        android:textColor="@color/smart_white"
+        android:textSize="14sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_values_do_not_match"
+        tools:textColor="@color/smart_white" />
+
+    <Button
+        android:id="@+id/bt_forward_join"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/smart_white"
+        android:fontFamily="@font/t_font_medium"
+        android:enabled="true"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/bt_join_text_value"
+        android:textColor="@color/smart_sky"
+        android:textSize="14sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_forward_login"
+        app:strokeColor="@color/smart_sky"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/tv_explore_without_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/suggest_without_login"
+        android:fontFamily="@font/t_font_light"
+        android:textSize="12sp"
+        android:textColor="@color/smart_grey_11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_forward_join" />
+
+    <!-- For test and debugging -->
+    <!-- here make tv_explore_without_sign to go right away home main navigate click-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

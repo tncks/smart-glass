@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 프로필 추가 및 수정 액티비티 / p3. 여행계획 -->
+
+    <ImageView
+        android:id="@+id/iv_unreal_back_simple"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/label_category"
+        android:src="@drawable/ic_unreal_back_page_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_simple_complete_edit_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/btn_simple_complete_submit"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="완료" />
+
+    <ImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="62dp"
+        android:contentDescription="@string/upload_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints="name"
+        android:background="@android:color/transparent"
+        android:hint="@string/hint_profile_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_profile" />
+
+    <EditText
+        android:id="@+id/et_location_of_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="name"
+        android:background="@android:color/transparent"
+        android:hint="@string/hint_location"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_profile_name" />
+
+    <EditText
+        android:id="@+id/et_period_of_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="name"
+        android:background="@android:color/transparent"
+        android:hint="@string/hint_duration"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_location_of_profile" />
+
+    <EditText
+        android:id="@+id/et_profile_memo"
+        android:layout_width="330dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/et_hint_memo_value"
+        android:inputType="text"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_period_of_profile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

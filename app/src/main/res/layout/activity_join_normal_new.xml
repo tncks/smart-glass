@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 회원가입 -->
+
+    <ImageView
+        android:id="@+id/iv_back_unreal_previous_like_toolbar_second"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/label_category"
+        android:src="@drawable/ic_unreal_back_page_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_email_normal_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="emailAddress"
+        android:background="@null"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:textColor="@color/smart_grey_05"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/hint_email"
+        tools:ignore="LabelFor"
+        tools:text="이메일" />
+
+    <TextView
+        android:id="@+id/tv_notice_email_exact_important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/smart_sky"
+        android:textSize="11sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_normal_user"
+        android:text="@string/inputcorrectlyexactly" />
+
+    <TextView
+        android:id="@+id/tv_notice_email_exact_important_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/smart_sky"
+        android:textSize="11sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_notice_email_exact_important"
+        android:text="@string/inputcorrectlyadditionalmessage" />
+
+    <EditText
+        android:id="@+id/tv_pw_normal_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="password"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textColor="@color/smart_grey_05"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        android:hint="@string/hint_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_notice_email_exact_important_extra"
+        tools:ignore="LabelFor"
+        tools:text="비밀번호" />
+
+    <ImageView
+        android:id="@+id/iv_hide_eye_pw_normal_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:contentDescription="@string/label_category"
+        app:layout_constraintStart_toStartOf="@id/tv_pw_normal_user"
+        app:layout_constraintTop_toTopOf="@id/tv_pw_normal_user"
+        android:src="@drawable/ic_closed_eye"
+        tools:srcCompat="@drawable/ic_closed_eye" />
+
+
+    <TextView
+        android:id="@+id/tv_pw_notice_important_level_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/smart_sky"
+        android:textSize="11sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pw_normal_user"
+        android:text="@string/inputpasswordvalidly" />
+
+    <EditText
+        android:id="@+id/tv_pw_retype_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:autofillHints="password"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textColor="@color/smart_grey_05"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        android:hint="@string/hint_password_re"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pw_notice_important_level_degree"
+        tools:ignore="LabelFor"
+        tools:text="비밀번호 확인" />
+
+    <ImageView
+        android:id="@+id/iv_hide_eye_pw_retype_normal_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:contentDescription="@string/label_category"
+        app:layout_constraintStart_toStartOf="@id/tv_pw_retype_again"
+        app:layout_constraintTop_toTopOf="@id/tv_pw_retype_again"
+        android:src="@drawable/ic_closed_eye"
+        tools:srcCompat="@drawable/ic_closed_eye" />
+
+    <EditText
+        android:id="@+id/tv_nickname_normal_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="username"
+        android:fontFamily="@font/t_font_light"
+        android:background="@null"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:textColor="@color/smart_grey_05"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pw_retype_again"
+        android:hint="@string/hint_nickname"
+        tools:ignore="LabelFor"
+        tools:text="닉네임" />
+
+    <TextView
+        android:id="@+id/tv_terms_and_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/smart_grey_03"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        android:text="@string/tvterms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nickname_normal_user"
+        tools:text="약관" />
+
+    <TextView
+        android:id="@+id/tv_message_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bt_submit_join_form_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/pw_not_match"
+        android:textColor="@color/smart_sky"
+        android:textSize="11sp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_submit_join_form_btn"
+        style="@style/SubmitBtnStyle"
+        android:layout_width="340dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="true"
+        android:text="@string/btn_simple_complete_submit"
+        android:textColor="@color/smart_white"
+        android:textColorHint="@color/smart_white"
+        android:textSize="14sp"
+        android:fontFamily="@font/t_font_medium"
+        app:cornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:backgroundTint="@color/smart_sky" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

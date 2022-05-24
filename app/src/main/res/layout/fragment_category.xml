@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 여행계획 프래그먼트 -->
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rv_clay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_category"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="150dp"
+                    app:menu="@menu/menu_list"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:subtitleTextAppearance="@style/TextHeadline5.Sky01.Bold"
+                    app:subtitleTextColor="@color/smart_sky"
+                    app:title="@string/label_category"
+                    app:titleTextAppearance="@style/TextHeadline5.Sky01.Bold"
+                    app:titleTextColor="@color/smart_sky" />
+
+                <TextView
+                    android:id="@+id/sametoptitle"
+                    style="@style/TextHeadline5.Sky01.Bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:text="@string/label_category"
+                    tools:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <include
+                    layout="@layout/top_sheet_wifi_connection"
+                    android:id="@+id/ltswifi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_margin="16dp"
+                    android:visibility="invisible"
+                    tools:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/showonnothing"
+                    app:layout_constraintBottom_toBottomOf="parent"></include>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_category_list"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:layout_marginTop="20dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar_category"
+                    app:spanCount="1"
+                    tools:listitem="@layout/item_category" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/showonnothing"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/smart_sky"
+                    android:contentDescription="@string/label_category"
+                    android:src="@drawable/ic_plus"
+                    android:visibility="gone"
+                    app:fabCustomSize="70dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar_category"
+                    app:tint="@color/smart_white"
+                    tools:visibility="visible" />
+
+
+                <!-- id/fab_main component removed here 0425 I did remove it-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_sheet_persistent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

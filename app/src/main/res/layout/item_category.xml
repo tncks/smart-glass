@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 아이템 - 여행계획 리사이클러뷰 -->
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.smart.app.ui.category.CategoryViewModel" />
+
+        <variable
+            name="category"
+            type="com.smart.app.model.Category" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/crtmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_bluegrey_r20"
+        android:onClick="@{() -> viewModel.openCategoryDetail(category)}">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_category_thumbnail"
+            imageUrl="@{category.thumbnailImageUrl}"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Circle" />
+
+        <TextView
+            android:id="@+id/tv_category_badge"
+            style="@style/TextCaption2.White.Bold"
+            isVisible="@{category.updated}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_purple_r24"
+            tools:background="@drawable/background_white"
+            tools:visibility="gone"
+            android:text="@string/label_category_new"
+            app:layout_constraintStart_toStartOf="@id/iv_category_thumbnail"
+            app:layout_constraintEnd_toEndOf="@id/iv_category_thumbnail"
+            app:layout_constraintBottom_toBottomOf="@id/iv_category_thumbnail"
+            app:layout_constraintTop_toTopOf="@id/iv_category_thumbnail" />
+
+        <ImageView
+            android:id="@+id/tick_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/label_category"
+            app:layout_constraintStart_toStartOf="@id/iv_category_thumbnail"
+            app:layout_constraintEnd_toEndOf="@id/iv_category_thumbnail"
+            app:layout_constraintBottom_toBottomOf="@id/iv_category_thumbnail"
+            app:layout_constraintTop_toTopOf="@id/iv_category_thumbnail"
+            android:background="@drawable/ic_ckeckmark2"
+            android:backgroundTint="@color/smart_white"
+            tools:visibility="visible"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_category_title"
+            style="@style/TextMedium.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:fontFamily="@font/t_font"
+            android:paddingEnd="10dp"
+            android:paddingStart="30dp"
+            android:text="@{category.label}"
+            android:paddingTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_category_thumbnail"
+            tools:text="독일여행" />
+
+        <TextView
+            android:id="@+id/tv_category_period"
+            style="@style/TextCaption1.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/t_font"
+            android:paddingStart="30dp"
+            android:paddingEnd="5dp"
+            android:text="@{category.period}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_category_title"
+            tools:text="22. 1. 20. ~ 22. 1. 31." />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 인증메일 발송 -->
+
+    <ImageView
+        android:id="@+id/iv_back_unreal_previous_like_toolbar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/label_category"
+        android:src="@drawable/ic_unreal_back_page_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user_email_address_to_resetpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="65dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back_unreal_previous_like_toolbar"
+        tools:text="example@naver.com" />
+
+    <TextView
+        android:id="@+id/tv_notice_sent_message_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/tv_code_sent_request_check_message"
+        android:textColor="@color/smart_sky"
+        android:textSize="12sp"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_email_address_to_resetpw"
+        tools:text="인증메일이 발송되었습니다. 메일을 확인해주세요." />
+
+    <Button
+        android:id="@+id/btn_next_step_again"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/smart_white"
+        android:enabled="true"
+        android:text="@string/btn_resend_code_request_submit_value"
+        android:fontFamily="@font/t_font_medium"
+        android:textColor="@color/smart_sky"
+        android:textColorHint="@color/smart_sky"
+        android:textSize="14sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_notice_sent_message_code"
+        app:strokeColor="@color/smart_sky"
+        app:strokeWidth="1dp"
+        tools:text="재전송" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+        <item name="colorPrimary">@color/smart_splash_03</item>
+        <item name="colorPrimaryVariant">@color/smart_sky</item>
+    </style>
+
+    <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/smart_white</item>
+        <item name="android:background">@color/smart_splash_03</item>
+        <item name="android:backgroundTint">@color/smart_splash_03</item>
+        <item name="strokeColor">@color/smart_white</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="shapeAppearanceOverlay">@style/Outlined.MaterialComponents.Button.TextButton.Snackbar</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorPrimary">@color/smart_splash_03</item>
+        <item name="colorPrimaryVariant">@color/smart_sky</item>
+        <item name="colorOnSurface">@color/smart_splash_05</item>
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+    <style name="Outlined.MaterialComponents.Button.TextButton.Snackbar" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/smart_white</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+</resources>

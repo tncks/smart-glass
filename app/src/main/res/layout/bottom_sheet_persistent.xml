@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_persistent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:behavior_draggable="false"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/dummys"
+            tools:background="@color/smart_white"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:minWidth="1dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_weight="1" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_unchecked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/take_image_label"
+            android:paddingTop="22dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/smart_black_01"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="@font/t_font_light"
+            android:text="@string/bottom_test_text_all"
+            tools:text="모두 선택"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="0dp"
+            android:minWidth="1dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/select_image_label"
+            android:gravity="center_horizontal"
+            android:paddingTop="22dp"
+            android:textSize="14sp"
+            android:textColor="@color/smart_black_01"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:fontFamily="@font/t_font_light"
+            android:text="@string/bottom_test_text_deletion"
+            tools:text="삭제"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="22dp"
+            android:id="@+id/select_image_label2"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:textColor="@color/smart_black_01"
+            android:layout_weight="4"
+            android:fontFamily="@font/t_font_light"
+            android:text="@string/bottom_test_text_cancel"
+            tools:text="취소"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

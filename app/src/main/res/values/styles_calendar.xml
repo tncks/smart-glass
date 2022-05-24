@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- split calendar file for style datepicker -->
+
+    <!-- Calendar child style -->
+    <style name="CustomThemeOverlay_MaterialCalendar_Fullscreen" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="materialCalendarStyle">@style/Custom_MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarHeaderLayout">@style/customHeaderLayout</item>
+        <item name="materialCalendarHeaderSelection">@style/customHeaderSelection</item>
+        <item name="materialCalendarHeaderTitle">@style/customHeaderTitle</item>
+        <item name="materialCalendarMonthNavigationButton">@style/customMonthNavigationButton</item>
+        <item name="materialCalendarYearNavigationButton">@style/customYearNavigationButton</item>
+        <item name="materialCalendarDay">@style/customDay</item>
+        <item name="android:textColor">@color/smart_black_01</item>
+        <item name="android:maxDate">11/11/2023</item>
+        <item name="colorPrimary">@color/smart_splash_03</item>
+        <item name="colorOnSurface">@color/smart_black_01</item>
+        <item name="android:calendarTextColor">@color/smart_brown</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ButtonBarNegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ButtonBarPositiveButtonStyle</item>
+    </style>
+
+
+    <style name="customHeaderLayout" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:background">@color/smart_white</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="customHeaderSelection" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">@color/smart_white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="customHeaderTitle" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderTitle">
+        <item name="android:textAppearance">@style/customTextAppearance</item>
+    </style>
+
+    <style name="customTextAppearance" parent="@style/TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+
+    <style name="customMonthNavigationButton" parent="@style/Widget.MaterialComponents.MaterialCalendar.MonthNavigationButton">
+        <item name="iconTint">@color/smart_white</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="customYearNavigationButton" parent="@style/Widget.MaterialComponents.MaterialCalendar.YearNavigationButton">
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="paddingEnd">1dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="contentPaddingRight">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:paddingEnd">1dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">@font/t_font_bold</item>
+        <item name="android:fontFamily">@font/t_font_bold</item>
+        <item name="android:textColor">@color/smart_sky</item>
+    </style>
+
+    <style name="customDay" parent="@style/Widget.MaterialComponents.MaterialCalendar.DayTextView">
+        <item name="fontFamily">@font/t_font</item>
+        <item name="android:fontFamily">@font/t_font</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ButtonBarNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+    <style name="ButtonBarPositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/smart_black_01</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/t_font_light</item>
+        <item name="android:fontFamily">@font/t_font_light</item>
+    </style>
+
+    <style name="Custom_MaterialCalendar.Fullscreen" parent="@style/Widget.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+
+</resources>

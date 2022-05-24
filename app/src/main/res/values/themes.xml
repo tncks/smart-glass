@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.smartandroid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/smart_sky</item>
+        <item name="colorPrimaryVariant">@color/smart_gradient_purple</item>
+        <item name="colorOnPrimary">@color/smart_white</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/smart_pink_01</item>
+        <item name="colorSecondaryVariant">@color/smart_pink_02</item>
+        <item name="colorOnSecondary">@color/smart_black_01</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customized -->
+        <item name="appBarLayoutStyle">@style/AppbarStyle</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <!-- Calendar -->
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/CustomThemeOverlay_MaterialCalendar_Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+        <!-- Snackbar -->
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.App.SnackbarButton</item>
+    </style>
+    <!-- End of base -->
+
+
+    <!-- child of item appBarLayoutStyle related Base application theme -->
+    <style name="AppbarStyle" parent="Widget.Design.AppBarLayout">
+        <item name="android:background">@color/smart_white</item>
+    </style>
+
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/smart_black_01</item>
+    </style>
+
+    <!-- Splash theme related Base application theme -->
+    <style name="Theme.smartandroid.Splash">
+        <item name="android:windowBackground">@drawable/background_splash_screen</item>
+    </style>
+
+    <!-- child of Theme.smartandroid related Base application theme -->
+    <style name="Theme.smartandroid.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- AppBar default theme auto generated related Base application theme -->
+    <style name="Theme.smartandroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" tools:ignore="UnusedResources" />
+    <!-- Popup default theme auto generated related Base application theme -->
+    <style name="Theme.smartandroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" tools:ignore="UnusedResources" />
+</resources>

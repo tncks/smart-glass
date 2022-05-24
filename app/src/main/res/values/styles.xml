@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Button Style -->
+    <style name="SubmitBtnStyle">
+        <item name="android:backgroundTint">@color/btn_color</item>
+    </style>
+
+    <!-- ImageView Style -->
+    <style name="Circle">
+        <item name="cornerSize">6%</item>
+    </style>
+
+
+    <!-- Text Style -->
+    <style name="TextMedium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/smart_black_01</item>
+    </style>
+
+    <style name="TextMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMedium.White">
+        <item name="android:textColor">@color/smart_white</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="TextMedium.Purple">
+        <item name="android:textColor">@color/smart_purple</item>
+    </style>
+
+    <style name="TextMedium.Purple.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/smart_black_01</item>
+    </style>
+
+    <style name="TextSubtitle1.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle1.White">
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+    <style name="TextSubtitle1.White.Bold">
+        <item name="android:textColor">@color/smart_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/smart_black_01</item>
+    </style>
+
+    <style name="TextSubtitle2.Travelzsky">
+        <item name="android:textColor">@color/smart_sky</item>
+    </style>
+
+    <style name="TextSubtitle2.Travelzsky.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle2.Purple">
+        <item name="android:textColor">@color/smart_purple</item>
+    </style>
+
+    <style name="TextSubtitle2.Purple.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle2.Grey05">
+        <item name="android:textColor">@color/smart_grey_05</item>
+    </style>
+
+    <style name="TextSubtitle3">
+        <item name="android:textColor">@color/smart_black_01</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextSubtitle3.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle3.Grey03">
+        <item name="android:textColor">@color/smart_grey_03</item>
+    </style>
+
+    <style name="TextSubtitle3.Grey05">
+        <item name="android:textColor">@color/smart_grey_05</item>
+    </style>
+
+    <style name="TextCaption1" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/smart_black_01</item>
+    </style>
+
+    <style name="TextCaption1.White">
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+    <style name="TextCaption1.Grey01">
+        <item name="android:textColor">@color/smart_grey_01</item>
+    </style>
+
+    <style name="TextCaption1.Grey03">
+        <item name="android:textColor">@color/smart_grey_03</item>
+    </style>
+
+    <style name="TextCaption1.Grey05">
+        <item name="android:textColor">@color/smart_grey_05</item>
+    </style>
+
+    <style name="TextHeadline5.Travelsky" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/smart_sky</item>
+    </style>
+
+    <style name="TextHeadline5.Travelsky.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHeadline5.White02" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+    <style name="TextHeadline5.White02.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHeadline5.Sky01" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/smart_sky</item>
+    </style>
+
+    <style name="TextHeadline5.Sky01.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCaption2" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/smart_black_01</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TextCaption2.White">
+        <item name="android:textColor">@color/smart_white</item>
+    </style>
+
+    <style name="TextCaption2.White.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCaption2.Grey04">
+        <item name="android:textColor">@color/smart_grey_04</item>
+    </style>
+
+
+    <!-- Dialog Style, Modal Theme -->
+    <style name="MDialogTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/wwhitegrey</item>
+        <item name="android:background">@color/wwhitegrey</item>
+        <item name="android:backgroundTint">@color/wwhitegrey</item>
+        <item name="android:textColor">@color/bblack</item>
+        <item name="colorAccent">@color/wwhitegrey</item>
+        <item name="android:textColorPrimary">@color/smart_black_01</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+</resources>

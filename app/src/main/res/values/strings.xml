@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">TTTveLZ</string>
+
+    <!-- GMS Map style with map id -->
+    <string name="map_id">244f6466a063fece</string>
+
+    <!-- Navigation -->
+    <string name="label_category">TTTvelZ</string>
+    <string name="label_category2">여행계획</string>
+    <string name="label_home_icon">여행기록</string>
+    <string name="label_cart_icon">포토북</string>
+    <string name="label_cart_icon2">마이페이지</string>
+
+
+    <!-- Image Description -->
+    <string name="description_category_thumbnail">카테고리 썸네일</string>
+    <string name="applogo">appLogo</string>
+    <string name="description_product_representative_image">centered_desc_img</string>
+    <string name="upload_desc">ClickThisToUpload</string>
+
+
+    <!-- Category -->
+    <string name="label_category_new">NEW</string>
+    <string name="label_category_n">N</string>
+
+
+    <!-- Sign Before Start -->
+    <string name="suggest_without_login"><u>로그인 없이 둘러보기</u></string>
+    <string name="bt_login_text_value">로그인</string>
+    <string name="bt_join_text_value">회원가입</string>
+    <string name="tv_join_complete_message">회원가입이 완료되었습니다.</string>
+    <string name="bt_finish_end_text_value">완료</string>
+    <string name="tv_require_email_step_value">이메일 주소를 입력하세요</string>
+    <string name="btn_forgot_first_step_submit_text">완료</string>
+    <string name="tv_code_sent_request_check_message">인증메일이 발송되었습니다. 메일을 확인해주세요.</string>
+    <string name="btn_resend_code_request_submit_value">재전송</string>
+    <string name="please_set_your_pw">비밀번호를 입력하세요</string>
+    <string name="pw_basic_condition_length_limit">영문자, 숫자, 특수문자를 포함하여 8자리 이상 16자리 미만</string>
+    <string name="please_retype_pw_again">비밀번호를 재입력하세요</string>
+    <string name="btn_simple_complete_submit">완료</string>
+    <string name="tv_forgot_pw_start_reset">비밀번호 찾기</string>
+    <string name="hint_email">이메일</string>
+    <string name="hint_password">비밀번호</string>
+    <string name="hint_password_re">비밀번호 확인</string>
+    <string name="hint_nickname">닉네임</string>
+    <string name="tvterms">약관</string>
+    <string name="tvjoinfail">회원가입 실패</string>
+    <string name="tvretry">처음으로</string>
+    <string name="tvfailmessagejoin">회원가입 과정에서 오류가 발생하였습니다.</string>
+    <string name="tvfailmessagejoinre">회원가입을 다시 진행해주세요.</string>
+    <string name="tvtermsaccept">확인</string>
+    <string name="inputcorrectlyexactly">정확한 주소를 입력하세요</string>
+    <string name="inputcorrectlyadditionalmessage">비밀번호 분실 시 재발급 등 중요한 공지전달에 사용됩니다.</string>
+    <string name="inputpasswordvalidly">영문자, 숫자, 특수문자를 포함하여 8자리 이상 16자리 미만</string>
+    <string name="email_or_pw_not_match">이메일 또는 비밀번호가 일치하지 않습니다.</string>
+    <string name="pw_not_match">비밀번호가 일치하지 않습니다.</string>
+
+
+    <!-- Profile -->
+    <string name="hint_profile_name">프로필 이름</string>
+    <string name="hint_location">여행 장소</string>
+    <string name="hint_duration">여행 기간</string>
+    <!-- Popup menu titles in profile home -->
+    <string name="m_edit_profile">프로필 수정</string>
+    <string name="m_pin_profile">프로필 고정</string>
+    <string name="m_move_profile_history_tab">여행기록으로 이동</string>
+
+
+    <!-- Schedule -->
+    <string name="hint_schedule_name">일정 이름</string>
+    <string name="hint_location_search">장소 검색</string>
+    <string name="hint_schedule_time">일정 시간</string>
+    <string name="et_hint_location_value">장소 입력</string>
+    <string name="et_hint_memo_value">메모</string>
+
+
+    <!-- Gallery select description message -->
+    <string name="select_gallery_picture">갤러리사진선택</string>
+
+
+    <!-- Compose activity titles -->
+    <string name="title_activity_main_compose">MainComposeActivity</string>
+
+
+    <!-- Utils -->
+    <string name="unit_discount_rate" tools:ignore="UnusedResources">%d%%</string>
+    <string name="unit_discount_currency" tools:ignore="UnusedResources">%s 원</string>
+
+
+    <!-- Toolbar toggle menu titles -->
+    <string name="menu_test_text_title_add">추가</string>
+    <string name="menu_test_text_title_delete">삭제</string>
+    <string name="menu_test_text_title_move">이동</string>
+
+    <!-- Persistent BottomSheet Menu TextViews Contents -->
+    <string name="bottom_test_text_all">모두 선택</string>
+    <string name="bottom_test_text_deletion">삭제</string>
+    <string name="bottom_test_text_cancel">취소</string>
+
+
+    <!-- map -->
+    <string name="tvtogglemap">지도접기&#160;</string>
+    <string name="tvtogglemapopposite">지도펴기&#160;</string>
+
+
+    <!-- Network Problem Notice -->
+    <string name="otherutilstrnetworkcheck">네트워크 연결을 확인해주세요.</string>
+
+</resources>

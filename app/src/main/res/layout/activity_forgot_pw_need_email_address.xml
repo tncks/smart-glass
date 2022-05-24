@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 이메일 주소 입력 -->
+
+    <ImageView
+        android:id="@+id/iv_back_unreal_previous_like_toolbar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/label_category"
+        android:src="@drawable/ic_unreal_back_page_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_user_email_address_to_resetpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="1dp"
+        android:paddingEnd="100dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="65dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/tv_require_email_step_value"
+        android:background="@null"
+        android:autofillHints="emailAddress"
+        android:fontFamily="@font/t_font_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back_unreal_previous_like_toolbar"
+        tools:hint="이메일 주소를 입력하세요" />
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_width="340dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/smart_white"
+        android:enabled="true"
+        android:text="@string/btn_forgot_first_step_submit_text"
+        android:textColor="@color/smart_sky"
+        android:textColorHint="@color/smart_sky"
+        android:textSize="14sp"
+        android:fontFamily="@font/t_font_medium"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_email_address_to_resetpw"
+        app:strokeColor="@color/smart_sky"
+        app:strokeWidth="1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

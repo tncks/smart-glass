@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- material date picker -->
+    <dimen name="mtrl_calendar_header_height" tools:ignore="UnusedResources">72dp</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_top" tools:ignore="UnusedResources">58dp</dimen>
+    <dimen name="mtrl_calendar_action_height" tools:ignore="UnusedResources">38dp</dimen>
+    <dimen name="mtrl_calendar_action_padding" tools:ignore="UnusedResources">2dp</dimen>
+    <dimen name="mtrl_calendar_bottom_padding" tools:ignore="UnusedResources">2dp</dimen>
+    <dimen name="mtrl_calendar_content_padding" tools:ignore="UnusedResources">12dp</dimen>
+    <dimen name="mtrl_calendar_header_text_padding" tools:ignore="UnusedResources">32dp</dimen>
+
+
+    <!-- tab layout nDayth deco indicate bar size -->
+    <dimen name="indicationbar">16dp</dimen>
+
+</resources>
+
+

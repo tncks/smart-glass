@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="LiveDataModel"
+            type="com.smart.app.ui.tutorials.entitytype.LiveDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 사진1 액티비티 / p7. 여행피드 -->
+        <!-- 사진1+글 액티비티랑 동일하나, 글 없는 버전 -->
+
+        <ImageView
+            android:id="@+id/iv_unreal_back_simple"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/label_category"
+            android:src="@drawable/ic_unreal_back_page_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/upload_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plain_text_input8"
+            android:visibility="invisible"
+            tools:visibility="gone"
+            android:text="@{LiveDataModel.isUpdate().testOne ?? `이`}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

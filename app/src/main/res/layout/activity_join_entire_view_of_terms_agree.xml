@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="TermDataModel"
+            type="com.smart.app.entitytype.TermDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 약관 전체 보기 및 동의체크, 회원가입 과정 중 -->
+
+        <TextView
+            android:id="@+id/text_test"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="30dp"
+            android:text="@{TermDataModel.isUpdate().testOne ?? `Terms Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit. Cursus turpis massa tincidunt dui ut ornare lectus sit. Scelerisque viverra mauris in aliquam sem fringilla. Quisque sagittis purus sit amet volutpat. Convallis posuere morbi leo urna molestie at. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nibh ipsum consequat nisl vel pretium lectus quam id. Porttitor eget dolor morbi non arcu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit. Cursus turpis massa tincidunt dui ut ornare lectus sit. Scelerisque viverra mauris in aliquam sem fringilla. Quisque sagittis purus sit amet volutpat. Convallis posuere morbi leo urna molestie at. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nibh ipsum consequat nisl vel pretium lectus quam id. Porttitor eget dolor morbi non arcu risus.`}"
+            tools:text="Terms Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit. Cursus turpis massa tincidunt dui ut ornare lectus sit. Scelerisque viverra mauris in aliquam sem fringilla. Quisque sagittis purus sit amet volutpat. Convallis posuere morbi leo urna molestie at. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nibh ipsum consequat nisl vel pretium lectus quam id. Porttitor eget dolor morbi non arcu risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit. Cursus turpis massa tincidunt dui ut ornare lectus sit. Scelerisque viverra mauris in aliquam sem fringilla. Quisque sagittis purus sit amet volutpat. Convallis posuere morbi leo urna molestie at. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nibh ipsum consequat nisl vel pretium lectus quam id. Porttitor eget dolor morbi non arcu risus."
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/okyesconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/smart_white"
+            android:text="@string/tvtermsaccept"
+            android:textColor="@color/smart_sky"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/smart_sky"
+            app:strokeWidth="1dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="120dp"
+    android:layout_margin="4dp"
+    android:minHeight="120dp">
+
+    <!-- 이미지 설정 리사이클러뷰 내부 컴포넌트 아이템 뷰, 카드뷰 레이아웃 -->
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/label_category"
+        tools:srcCompat="@drawable/samplelandscape"
+        tools:src="@drawable/samplelandscape" />
+
+    <!-- removed line -->
+    <!-- android:src="@drawable/image_border" -->
+
+</androidx.cardview.widget.CardView>
